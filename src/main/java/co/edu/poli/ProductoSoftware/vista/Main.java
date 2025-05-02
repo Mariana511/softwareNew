@@ -9,8 +9,10 @@ import javafx.stage.Stage;
 public class Main extends Application {
 	@Override
     public void start(Stage stage) throws Exception {
-        Parent root = FXMLLoader.load(getClass().getResource("co/edu/poli/ProductoSoftware/vista/Productos.fxml"));
-        stage.setTitle("Gestor de Productos");
+        //Parent root = FXMLLoader.load(getClass().getResource("co/edu/poli/ProductoSoftware/vista/Producto.fxml"));
+		Parent root = FXMLLoader.load(getClass().getResource("/co/edu/poli/ProductoSoftware/vista/Producto.fxml"));
+
+		stage.setTitle("Gestor de Productos");
         stage.setScene(new Scene(root));
         stage.show();
     }
