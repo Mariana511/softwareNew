@@ -42,6 +42,12 @@ public class Producto implements ObservadorProducto {
 	public void actualizarPrecio(double porcentaje) {
 		precioActual += precioActual * (porcentaje / 100.0);
 	}
+	
+	private HistorialPrecio historial = new HistorialPrecio();
+
+	public HistorialPrecio getHistorial() {
+	    return historial;
+	}
     
 
 }
